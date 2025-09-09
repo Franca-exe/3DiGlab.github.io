@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://3diglab.github.io/3DiG/sitemap.xml
+Sitemap: https://3diglab.github.io//sitemap.xml
