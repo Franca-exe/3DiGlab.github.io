@@ -1,3 +1,9 @@
+---
+name: Simone Melzi
+role: Associate Professor, Leader
+role_level: 999
+image: simone_melzi_pic.jpg
+---
 Simone Melzi is an Associate Professor at the University of Milano-Bicocca. He
 received his PhD in Computer Science from the University of Verona (2018) after
 graduating in Mathematics at the University of Milan (2013). He held

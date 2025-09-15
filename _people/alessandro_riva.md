@@ -1,3 +1,9 @@
+---
+name: Alessandro Riva
+role: PhD student
+role_level: 1
+image: alessandro_riva_pic.jpg
+---
 I’m Alessandro, I have a Master's Degree in computer science and I am now a
 second year PhD student at the University of Milano-Bicocca. My research
 interests include geometry processing, computer vision and machine learning. I

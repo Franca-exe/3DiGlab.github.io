@@ -1,3 +1,9 @@
+---
+name: Lorenzo Olearo
+role: PhD student
+role_level: 1
+image: lorenzo_olearo_pic.jpg
+---
 Hello there! I'm Lorenzo, almost at my second PhD year at the University of
 Milano-Bicocca where I previously obtained my Master's degree in Computer
 Science.

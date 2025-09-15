@@ -2,35 +2,45 @@
 layout: page
 ---
 <div class="post">
-  <article>
-    {% if page.profiles %}
-      {% for profile in page.profiles %}
+    {% if page.collection and page.collection.size > 0 %}
+      {% assign collection = site[page.collection] | sort: "role_level" | reverse | sort: "ex_member" %}
+      {% assign right = true %}
+      {% for profile in collection %}
         <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+        <header class="post-header">
+          <h2 class="post-title">{{ profile.name }}</h1>
+          <p class="post-description">{{ profile.role }}{% if profile.ex_member %}, ex member {% endif %}</p>
+        </header>
+        <article>
+          <div class="profile float-{% if right %}right{% else %}left{% endif %}">
+            {% if profile.image %}
+              {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+              {% if profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% endif %}
+              {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+              {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
             {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-        </div>
+            {% if profile.more_info %}
+              <div class="more-info">{{ profile.more_info }}</div>
+            {% endif %}
+          </div>
 
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
-        </div>
+          <div class="clearfix">
+            {% if profile.content %}
+              {{ profile.content }}
+            {% else %}
+              {{ content }}
+            {% endif %}
+          </div>
+        </article>
+        {% if right %}
+          {% assign right = false %}
+        {% else %}
+          {% assign right = true %}
+        {% endif %}
       {% endfor %}
     {% endif %}
-  </article>
 </div>
