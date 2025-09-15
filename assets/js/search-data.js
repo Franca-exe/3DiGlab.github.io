@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-people",
           title: "People",
-          description: "members of the lab or group",
+          description: "who is 3DiG",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
@@ -395,7 +395,47 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "people-alessandro-riva",
+          title: 'Alessandro_riva',
+          description: "",
+          section: "People",handler: () => {
+              window.location.href = "/people/alessandro_riva/";
+            },},{id: "people-daniele-baieri",
+          title: 'Daniele_baieri',
+          description: "",
+          section: "People",handler: () => {
+              window.location.href = "/people/daniele_baieri/";
+            },},{id: "people-filippo-maggioli",
+          title: 'Filippo_maggioli',
+          description: "",
+          section: "People",handler: () => {
+              window.location.href = "/people/filippo_maggioli/";
+            },},{id: "people-francesca-maccarone",
+          title: 'Francesca_maccarone',
+          description: "",
+          section: "People",handler: () => {
+              window.location.href = "/people/francesca_maccarone/";
+            },},{id: "people-giorgio-longari",
+          title: 'Giorgio_longari',
+          description: "",
+          section: "People",handler: () => {
+              window.location.href = "/people/giorgio_longari/";
+            },},{id: "people-giulio-vigano",
+          title: 'Giulio_vigano',
+          description: "",
+          section: "People",handler: () => {
+              window.location.href = "/people/giulio_vigano/";
+            },},{id: "people-lorenzo-olearo",
+          title: 'Lorenzo_olearo',
+          description: "",
+          section: "People",handler: () => {
+              window.location.href = "/people/lorenzo_olearo/";
+            },},{id: "people-simone-melzi",
+          title: 'Simone_melzi',
+          description: "",
+          section: "People",handler: () => {
+              window.location.href = "/people/simone_melzi/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
