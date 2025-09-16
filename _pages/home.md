@@ -6,7 +6,8 @@ subtitle: University of Milano-Bicocca, Department of Informatics, Systems and C
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: 3DiG.png
+  image_dark: 3DiG_dark.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>U14, Viale Sarca, 336, 20125 Milano MI, Italy</p>

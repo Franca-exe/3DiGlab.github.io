@@ -19,18 +19,32 @@ layout: default
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% if page.profile.image_dark %}
+            {% assign profile_image_dark_path = page.profile.image_dark | prepend: 'assets/img/' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_dark_path = page.profile.image | prepend: 'assets/img/' %}
+          {% endif %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_class = 'img-fluid rounded-circle only-light' %}
+            {% assign profile_image_dark_class = 'img-fluid rounded-circle only-dark' %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid rounded only-light' %}
+            {% assign profile_image_dark_class = 'img-fluid rounded only-dark' %}
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
+          <div class = 'only-light'>
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
           %}
+          </div>
+          <div class = 'only-dark'>
+          {%
+            include figure.liquid loading="eager" path=profile_image_dark_path class=profile_image_dark_class sizes=sizes alt=page.profile.image
+            cache_bust=true
+          %}
+          </div>
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
