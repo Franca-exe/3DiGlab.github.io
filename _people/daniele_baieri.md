@@ -6,7 +6,7 @@ role_level: 3
 # more_info: > # uncomment these lines to add more info like an address
 #     <p>More info line one</p>
 #     <p>More info line two</p>
-image: daniele_baieri_pic.jpg
+image: daniele_baieri_pic.png
 # socials:
     # this list contains the social media links and usernames of the author
     # the commented lines are the default social media links supported by the template
@@ -61,3 +61,9 @@ image: daniele_baieri_pic.jpg
         # title: Custom Social
         # url: https://www.alberteinstein.com/
 ---
+
+Daniele is a PostDoc researcher in the 3DiG group at University of
+Milano-Bicocca. His research interests lie in Computer Vision and 3D Graphics,
+in particular focusing on integration of neural shape representations in CG
+pipelines. He received his Ph.D. from Sapienza University of Rome in 2025, as
+well as his MSc (2021) and BSc (2019) degrees.
