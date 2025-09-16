@@ -26,6 +26,9 @@ layout: page
             {% if profile.more_info %}
               <div class="more-info">{{ profile.more_info }}</div>
             {% endif %}
+            {% if profile.socials %}
+              {% include profiles/social.liquid socials=profile.socials %}
+            {% endif %}
           </div>
 
           <div class="clearfix">
