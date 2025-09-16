@@ -1,49 +1,49 @@
 ---
-layout: page
+layout: default
 ---
-<div class="post">
-    {% if page.collection and page.collection.size > 0 %}
-      {% assign collection = site[page.collection] | sort: "role_level" | reverse | sort: "ex_member" %}
-      {% assign right = true %}
-      {% for profile in collection %}
-        <hr>
-        <header class="post-header">
-          <h2 class="post-title">{{ profile.name }}</h1>
-          <p class="post-description">{{ profile.role }}{% if profile.ex_member %}, ex member {% endif %}</p>
-        </header>
-        <article>
-          <div class="profile float-{% if right %}right{% else %}left{% endif %}">
-            {% if profile.image %}
-              {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-              {% if profile.image_circular %}
-                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-              {% else %}
-                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-              {% endif %}
-              {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-              {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-            {% endif %}
-            {% if profile.more_info %}
-              <div class="more-info">{{ profile.more_info }}</div>
-            {% endif %}
-            {% if profile.socials %}
-              {% include profiles/social.liquid socials=profile.socials %}
-            {% endif %}
-          </div>
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
 
-          <div class="clearfix">
-            {% if profile.content %}
-              {{ profile.content }}
-            {% else %}
-              {{ content }}
-            {% endif %}
-          </div>
-        </article>
-        {% if right %}
-          {% assign right = false %}
-        {% else %}
-          {% assign right = true %}
-        {% endif %}
-      {% endfor %}
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+  <article>
+    {% if page.collection and page.collection.size > 0 %}
+      {% assign collection = site[page.collection] | sort: "role_level" | reverse | where_exp: "item", "item.ex_member != true" %}
+      {% if collection.size > 0 %}
+        {% include profiles/profiles_list.liquid collection=collection %}
+      {% endif %}
     {% endif %}
+  </article>
+  <hr>
+  <hr>
+  <header class="post-header">
+    <h1 class="post-title">{{ page.ex_members_title }}</h1>
+    <p class="post-description">{{ page.ex_members_description }}</p>
+  </header>
+  <article>
+    {% if page.collection and page.collection.size > 0 %}
+      {% assign collection = site[page.collection] | sort: "role_level" | reverse | where: "ex_member", true %}
+      {% if collection.size > 0 %}
+        {% include profiles/profiles_list.liquid collection=collection %}
+      {% endif %}
+    {% endif %}
+  </article>
+
+  {% if page.related_publications %}
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --cited_in_order %}
+    </div>
+  {% endif %}
+
+  {% if site.giscus and page.giscus_comments %}
+    {% include giscus.liquid %}
+  {% endif %}
 </div>
