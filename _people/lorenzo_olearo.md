@@ -7,21 +7,21 @@ role_level: 1
 #     <p>More info line one</p>
 #     <p>More info line two</p>
 image: lorenzo_olearo_pic.jpg
-# socials:
+socials:
     # this list contains the social media links and usernames of the author
     # the commented lines are the default social media links supported by the template
     # the socials will be displayed in the order they are defined here
 
-    # personal_page: # your personal page
+    personal_page: https://lorenzo.olearo.com
     # acm_id: # your dl.acm.org/profile/id
     # blogger_url: # your blogger URL
     # bluesky_url: # your bluesky URL
     # dblp_url: # your DBLP profile url
     # discord_id: # your discord id (18-digit unique numerical identifier)
-    # email: # your email address
+    email: lorenzo.olearo@unimib.it
     # facebook_id: # your facebook id
     # flickr_id: # your flickr id
-    # github_username: # your GitHub user name
+    github_username: LorenzoOlearo
     # gitlab_username: # your GitLab user name
     # ieee_id: # your ieeexplore.ieee.org/author/id
     # inspirehep_id: # Inspire HEP author ID
@@ -31,17 +31,17 @@ image: lorenzo_olearo_pic.jpg
     # lastfm_id: # your lastfm id
     # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
     # leetcode_id: # your LeetCode id
-    # linkedin_username: # your LinkedIn user name
+    linkedin_username: lorenzo-olearo
     # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
     # medium_username: # your Medium username
-    # orcid_id: # your ORCID ID
+    orcid_id: https://orcid.org/0009-0000-7290-3549
     # osf_id: # your OSF ID
     # pinterest_id: # your pinterest id
     # publons_id: # your ID on Publons
     # quora_username: # your Quora username
     # research_gate_profile: # your profile on ResearchGate
     # rss_icon: true # comment this line to hide the RSS icon
-    # scholar_userid: # your Google Scholar ID
+    scholar_userid: DbDEYn4AAAAJ&hl
     # scopus_id: # your profile on Scopus
     # semanticscholar_id: # your Semantic Scholar ID
     # spotify_id: # your spotify id
