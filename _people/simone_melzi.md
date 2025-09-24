@@ -18,10 +18,10 @@ socials:
     # bluesky_url: # your bluesky URL
     # dblp_url: # your DBLP profile url
     # discord_id: # your discord id (18-digit unique numerical identifier)
-    # email: # your email address
+    email: simone.melzi@unimib.it
     # facebook_id: # your facebook id
     # flickr_id: # your flickr id
-    # github_username: # your GitHub user name
+    github_username: https://github.com/melzismn
     # gitlab_username: # your GitLab user name
     # ieee_id: # your ieeexplore.ieee.org/author/id
     # inspirehep_id: # Inspire HEP author ID
