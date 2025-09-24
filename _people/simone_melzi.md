@@ -12,7 +12,7 @@ image: simone_melzi_pic.png
     # the commented lines are the default social media links supported by the template
     # the socials will be displayed in the order they are defined here
 
-    # personal_page: # your personal page
+    personal_page: https://sites.google.com/site/melzismn/
     # acm_id: # your dl.acm.org/profile/id
     # blogger_url: # your blogger URL
     # bluesky_url: # your bluesky URL
