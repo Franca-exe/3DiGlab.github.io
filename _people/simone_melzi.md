@@ -34,15 +34,15 @@ socials:
     # linkedin_username: # your LinkedIn user name
     # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
     # medium_username: # your Medium username
-    # orcid_id: # your ORCID ID
+    orcid_id: 0000-0003-2790-9591 # your ORCID ID
     # osf_id: # your OSF ID
     # pinterest_id: # your pinterest id
     # publons_id: # your ID on Publons
     # quora_username: # your Quora username
-    # research_gate_profile: # your profile on ResearchGate
+    research_gate_profile: Simone-Melzi # your profile on ResearchGate
     # rss_icon: true # comment this line to hide the RSS icon
     scholar_userid: hkrUTqEAAAAJ&hl
-    # scopus_id: # your profile on Scopus
+    scopus_id: 56567935900 # your profile on Scopus
     # semanticscholar_id: # your Semantic Scholar ID
     # spotify_id: # your spotify id
     # stackoverflow_id: # your stackoverflow id
