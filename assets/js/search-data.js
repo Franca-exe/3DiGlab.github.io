@@ -430,8 +430,8 @@ ninja.data = [{
           description: "",
           section: "People",handler: () => {
               window.location.href = "/people/lorenzo_olearo/";
-            },},{id: "people-",
-          title: '',
+            },},{id: "people-simone-melzi",
+          title: 'Simone_melzi',
           description: "",
           section: "People",handler: () => {
               window.location.href = "/people/simone_melzi/";
