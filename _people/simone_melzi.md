@@ -21,7 +21,7 @@ socials:
     email: simone.melzi@unimib.it
     # facebook_id: # your facebook id
     # flickr_id: # your flickr id
-    github_username: https://github.com/melzismn
+    # github_username: # https://github.com/melzismn
     # gitlab_username: # your GitLab user name
     # ieee_id: # your ieeexplore.ieee.org/author/id
     # inspirehep_id: # Inspire HEP author ID
