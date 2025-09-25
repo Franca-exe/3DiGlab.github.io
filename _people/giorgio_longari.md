@@ -1,13 +1,13 @@
 ---
 name: Giorgio Longari
-role: Reasearcher
+role: Researcher
 role_level: 2
 ex_member: true
 # more_info: > # uncomment these lines to add more info like an address
 #     <p>More info line one</p>
 #     <p>More info line two</p>
 image: giorgio_longari_pic.jpg
-# socials:
+socials:
     # this list contains the social media links and usernames of the author
     # the commented lines are the default social media links supported by the template
     # the socials will be displayed in the order they are defined here
