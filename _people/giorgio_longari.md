@@ -61,3 +61,7 @@ image: giorgio_longari_pic.jpg
         # title: Custom Social
         # url: https://www.alberteinstein.com/
 ---
+Giorgio Longari is a Researcher in Computer Science with a background in Mathematical Engineering (B.Sc. and M.Sc, Politecnico di Milano). He is currently working at the Wolfgang Pauli Institute in Vienna. His work revolves around Riemannian geometry, Computer Vision, and Machine learning with real world applications, particularly in the medical field. He also maintains active collaborations with academic institutions such as UC Santa Barbara and University of Milano Bicocca, as well as with Research Hospitals like IRCSS Humanitas and IRCSS E. Medea.
+He values research as a dialogue between structure and creativity, aiming to uncover clarity within complexity.
+
+
