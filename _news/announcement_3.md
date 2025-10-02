@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2025-09-18 07:59:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Our paper "Implicit-ARAP: Efficient Handle-Guided Neural Field Deformation via Local Patch Meshing" (**D. Baieri**, **F. Maggioli**, E. Rodolà, **S. Melzi**, Z. Lähner) was accepted at NeurIPS 2025! :smiley: :tada:
