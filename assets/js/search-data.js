@@ -399,8 +399,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-our-paper-implicit-arap-efficient-handle-guided-neural-field-deformation-via-local-patch-meshing-d-baieri-f-maggioli-e-rodolà-s-melzi-z-lähner-was-accepted-at-neurips-2025-smiley-tada",
+          title: 'Our paper “Implicit-ARAP: Efficient Handle-Guided Neural Field Deformation via Local Patch Meshing” (D....',
           description: "",
           section: "News",},{id: "people-alessandro-riva",
           title: 'Alessandro_riva',
