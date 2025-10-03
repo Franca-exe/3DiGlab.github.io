@@ -152,6 +152,8 @@ collections:
     output: true
   people:
     output: false
+  theses:
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -198,6 +200,7 @@ exclude:
   - _pages/cv
   - _pages/blog
   - _people/new_person.md
+  - _theses/new_thesis.md
 
 keep_files:
   - CNAME
