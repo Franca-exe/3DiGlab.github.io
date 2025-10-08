@@ -62,4 +62,5 @@ socials:
         # url: https://www.alberteinstein.com/
 ---
 
-Francesca Maccarone
+Francesca Maccarone is a PhD researcher in Computer Science with a background in in Biomedical Engineering (B.Sc and M.Sc from Polytechnic University of Milan). She holds a cofoundend position shared by the 3DiG research lab under the supervision of Prof. Simone Melzi and the Cesne lab at the Eugenio Medea Research Institute (Bosisio Parini, LC). Her research interests center on shape analysis and machine learning, with applications in medical imaging and a particular emphasis on pediatric neuroimaging. She has a deep fascination for scientific communication and strongly believe in the democratization of scientific knowledge.
+
